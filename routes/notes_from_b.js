@@ -5,7 +5,7 @@ require('dotenv').config();
 
 // 接続情報を設定
 const { MongoClient } = require("mongodb");
-//const uri = "mongodb+srv://2201115015dj_db_user:NWzZZPDwCXihU54W@db1.7jytvvf.mongodb.net/?appName=db";
+
 const uri=process.env.MONGODB_URI;
 const client = new MongoClient(uri);
 
